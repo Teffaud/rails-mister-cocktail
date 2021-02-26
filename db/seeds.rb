@@ -11,11 +11,15 @@ Cocktail.destroy_all
 Dose.destroy_all
 Ingredient.destroy_all
 
+puts 'Creating Mojito...'
+file = URI.open('https://images.unsplash.com/photo-1599021456807-25db0f974333?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=979&q=80')
+mojito = Cocktail.create!(name: 'Mojito')
+mojito.photo.attach(io: file, filename: 'nes.jpeg', content_type: 'image/jpeg')
+puts 'Finished!'
+
 Ingredient.create!(name: 'lemon')
 Ingredient.create!(name: 'ice')
 Ingredient.create!(name: 'mint leaves')
-
-Cocktail.create!(name: 'Mojito')
 
 cocktail = Cocktail.last.id
 ingredient = Ingredient.last.id
