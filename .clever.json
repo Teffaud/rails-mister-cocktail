@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "app_id": "app_579ee276-b69e-451d-8555-a089a2fcf527",
+      "org_id": "user_5bc400cf-e0a3-4946-ad69-28a31ffc7b30",
+      "deploy_url": "https://push-par-clevercloud-customers.services.clever-cloud.com/app_579ee276-b69e-451d-8555-a089a2fcf527.git",
+      "name": "mister_cocktail",
+      "alias": "mister_cocktail"
+    }
+  ]
+}
