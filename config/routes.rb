@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # get 'tasks/:id/edit', to: 'tasks#edit', as: :edit_task
   # patch 'tasks/:id', to: 'tasks#update'
   # delete 'tasks/:id', to: 'tasks#destroy'
+  root to: 'cocktails#index'
 
   resources :cocktails, as: :cocktails do
     resources :doses, only: %i[show index new create destroy], as: :doses
